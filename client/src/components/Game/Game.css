@@ -28,6 +28,18 @@
   align-items: center;
 }
 .theme:hover{
-  background: rgb(13, 126, 154);
+  background: rgb(80, 196, 225);
   transition: .3s all ease;
+}
+.first{
+  width: 200px;
+  height: 100px;
+  background:linear-gradient(to top left, rgb(0, 0, 0), blue);
+  color:yellow;
+  outline: none;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid yellow;
 }
