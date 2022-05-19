@@ -7,8 +7,8 @@ import {
   Route,
 } from "react-router-dom";
 import Nav from '../Nav/Nav';
-// import { Provider } from 'react-redux'
-// import {store} from '../../redux/store'
+import { Provider } from 'react-redux'
+import {store} from '../../redux/store'
 // import PostParams from '../PostParams/PostParams';
 import React from "react";
 import Home from "../Home/Home";
@@ -17,14 +17,14 @@ function App() {
 
   return (
     <div className="App">
-     {/* <Provider value={store}> */}
+     <Provider store = {store}>
         <BrowserRouter>
           <Nav />
           <Routes>
             <Route path="/" element={<Home />} />
           </Routes>
         </BrowserRouter>
-      {/* </Provider> */}
+      </Provider>
     </div>
   );
 }
