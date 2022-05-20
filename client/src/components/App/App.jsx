@@ -12,7 +12,7 @@ import { Provider } from 'react-redux'
 import {store} from '../../redux/store'
 import Questions from '../Questions/Questions';
 // import PostParams from '../PostParams/PostParams';
-// import Home from '../Home/Home';
+import Modal from '../Modal/Modal';
 
 function App() {
 
@@ -23,6 +23,7 @@ function App() {
           <Nav />
           <Routes>
             <Route path="/" element={<Questions />} />
+            <Route path='/question/:id' element={<Modal />} />
           </Routes>
         </BrowserRouter>
       </Provider>
