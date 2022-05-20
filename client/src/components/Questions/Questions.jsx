@@ -16,7 +16,6 @@ export default function Questions() {
   return (
     <div className="wrapper">
       <div className="board">
-       
           
           {questions.map((el) => (
             <Game key={el.id} questions={el} />
