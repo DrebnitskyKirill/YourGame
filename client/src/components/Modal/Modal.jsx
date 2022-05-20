@@ -6,7 +6,7 @@ import React, {
 // import { FIND_QUESTION } from "../../redux/actionTypes/findQuestion";
 import "./Modal.css";
 
-export default function Modal({active, setActive, question}) {
+export default function Modal({active, setActive, questions}) {
   // const dispatch = useDispatch();
   // const { id } = useParams()
   // const {questions} = useSelector(state=>state.questions)
@@ -16,9 +16,9 @@ export default function Modal({active, setActive, question}) {
   //   .then(data => dispatch({ type: FIND_QUESTION, payload: data }));
   // }, [])
   return (
-    <div className={active ? 'modal.active' : "modal"} onClick={()=> setActive(false)}>
+    <div className={active ? 'modal.active' : "modal"} onClick={setActive}>
       <div onClick={e => e.stopPropagation()}>
-        {question}
+        {questions.question}
       </div>
       <input type="text" />
     </div>
