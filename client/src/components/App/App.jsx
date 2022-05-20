@@ -1,3 +1,4 @@
+import React from "react";
 import 'materialize-css/dist/css/materialize.min.css';
 import 'materialize-css/dist/js/materialize.min';
 import './App.css';
@@ -9,9 +10,9 @@ import {
 import Nav from '../Nav/Nav';
 import { Provider } from 'react-redux'
 import {store} from '../../redux/store'
+import Questions from '../Questions/Questions';
 // import PostParams from '../PostParams/PostParams';
-import React from "react";
-import Home from "../Home/Home";
+import Modal from '../Modal/Modal';
 
 function App() {
 
@@ -21,7 +22,8 @@ function App() {
         <BrowserRouter>
           <Nav />
           <Routes>
-            <Route path="/" element={<Home />} />
+            <Route path="/" element={<Questions />} />
+            <Route path='/question/:id' element={<Modal />} />
           </Routes>
         </BrowserRouter>
       </Provider>
