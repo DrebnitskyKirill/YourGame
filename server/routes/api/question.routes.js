@@ -5,8 +5,10 @@ const {
 
 router.get('/questions', async (req, res) => {
   const allQuestion = await Question.findAll({
-    raw: true,
+    raw: true
   });
+ 
+
    res.json(allQuestion)
 });
 
