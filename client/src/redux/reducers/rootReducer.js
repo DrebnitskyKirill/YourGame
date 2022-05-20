@@ -1,9 +1,6 @@
 import {combineReducers} from 'redux'
-// import { postsReducer } from './postsReducer'
-// import {studentsReducer} from './studentsReducer'
+import {questionReducer} from './questionReducer'
 
 export const rootReducer = combineReducers({
-  // posts: postsReducer,
-  // students: studentsReducer,
-  
+  questions: questionReducer,
 })

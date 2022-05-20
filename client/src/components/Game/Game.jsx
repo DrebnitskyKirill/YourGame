@@ -8,9 +8,7 @@ export default function Game() {
       <div className='board'>
         <div className='first' >title</div>
         <button className='theme' >title</button>
-        <button className='theme' >title</button>
-        <button className='theme' >title</button>
-        <button className='theme' onClick={() => setModalActive(!modalActive)}>title</button>
+       
       
       </div>
       <Modal active={modalActive} setActive={setModalActive}/>
