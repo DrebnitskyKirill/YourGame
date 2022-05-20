@@ -11,7 +11,7 @@ function Question() {
       <div onClick={()=>setActive(true)}>200</div>
       {active && <Modal {}/>}
     </div>
-  );
+  ); 
 }
 
 export default Question;
