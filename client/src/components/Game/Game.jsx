@@ -19,17 +19,19 @@
 //   );
 
 import React, { useState } from 'react'
+import { useSelector } from 'react-redux';
 import Modal from '../Modal/Modal'
 import './Game.css'
 // import { Link } from 'react-router-dom'
 
-export default function Game({question}) {
-  const {modalActive, setModalActive} = useState()  
+export default function Game({questions}) {
+  const { rightQuestion } = useSelector((store) => store.findQuestion);
+  console.log(rightQuestion)
+  const [modalActive, setModalActive] = useState(false)  
   return (
     <div>
-      <button className='open-btn' onClick={()=> setModalActive(true)}></button>
-      {/* <Link to={`questions/${question.id}`} className='theme' >{question.questionValue}</Link> */}
-      <Modal active={modalActive} setActive={setModalActive} question={question}></Modal>
+      <button className='theme' onClick={()=> setModalActive(true)}>{questions.questionValue}</button>
+      <Modal active={modalActive} setActive={()=>setModalActive(false)} questions={questions}></Modal>
     </div>
 
   )

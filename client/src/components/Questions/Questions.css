@@ -26,3 +26,10 @@
   align-items: center;
   border: 1px solid yellow;
 }
+.score{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size:xx-large
+}
