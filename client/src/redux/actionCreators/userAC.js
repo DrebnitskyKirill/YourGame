@@ -1,6 +1,6 @@
 import { REG_USER } from "../actionTypes/userAT"
 
-export const addStudentsAC = (payload) => {
+export const addUserAC = (payload) => {
   return {
     type: REG_USER,
     payload
