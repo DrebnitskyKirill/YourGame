@@ -8,6 +8,7 @@ export default function Game({ questions }) {
       setState("ok");
     }
   };
+  
   return (
     <>
       <button onClick={notActive} className="theme">
