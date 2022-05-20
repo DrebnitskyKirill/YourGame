@@ -1,0 +1,28 @@
+.wrapper{
+  min-height: 100vh;
+  width: 100%;
+  background: #2222;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  flex-direction: column;
+}
+.board{
+  width: 1000px;
+  height: 400px;
+  background: linear-gradient(to top left, rgb(0, 0, 0), blue);;
+  display: flex;
+  flex-wrap: wrap;
+}
+.first{
+  width: 200px;
+  height: 100px;
+  background:linear-gradient(to top left, rgb(0, 0, 0), blue);
+  color:yellow;
+  outline: none;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid yellow;
+}
