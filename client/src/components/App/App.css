@@ -1,0 +1,14 @@
+.active.disabled {
+  pointer-events: none;
+  }
+a{
+  color: yellow;
+}
+.ok{
+  text-decoration: line-through;
+  color:red
+  }
+
+.notOk{
+  pointer-events: none;
+}
