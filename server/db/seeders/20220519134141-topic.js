@@ -6,22 +6,22 @@ module.exports = {
       "Topics",
       [
         {
-          topic: "География",
+          title: "География",
           createdAt: new Date(),
           updatedAt: new Date(),
         },
         {
-          topic: "Кино",
+          title: "Кино",
           createdAt: new Date(),
           updatedAt: new Date(),
         },
         {
-          topic: "Выдры",
+          title: "Выдры",
           createdAt: new Date(),
           updatedAt: new Date(),
         },
         {
-          topic: "Обществознание",
+          title: "Обществознание",
           createdAt: new Date(),
           updatedAt: new Date(),
         }

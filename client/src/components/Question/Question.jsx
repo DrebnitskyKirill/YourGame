@@ -1,10 +1,15 @@
-import React from 'react';
+import React, { useState } from 'react';
+import Modal from '../Modal/Modal';
 
 function Question() {
-  
+  const obj = {question: 'Serega',
+
+}
+  const {active, setActive} = useState(false) 
   return (
     <div>
-      1243
+      <div onClick={()=>setActive(true)}>200</div>
+      {active && <Modal {}/>}
     </div>
   );
 }
