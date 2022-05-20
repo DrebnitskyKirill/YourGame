@@ -16,4 +16,10 @@
   background: rgb(80, 196, 225);
   transition: .3s all ease;
 }
+.zag{
+  display: flex;
+  justify-content: left;
+  position: absolute;
+  color:yellow;
+}
 

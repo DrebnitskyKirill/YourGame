@@ -16,6 +16,9 @@ module.exports = {
           key: 'id',
         },
       },
+      zag: {
+        type: Sequelize.TEXT
+      },
       question: {
         allowNull: false,
         type: Sequelize.TEXT

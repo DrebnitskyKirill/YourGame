@@ -33,7 +33,7 @@ router.post('/registration', async (req, res) => {
     });
     req.session.user = newUser;
     req.session.uid = newUser.id;
-   res.json({message:"!!"})
+   res.json(newUser)
   }
 });
 

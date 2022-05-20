@@ -27,15 +27,9 @@ function FormReg() {
       body: JSON.stringify(data),
     })
       .then((res) => res.json())
-      .then((data) => {
-
-
-
-        dispatch(addUserAC(data))
-        navigation("/");
-      } );
+      .then((data) => dispatch(addUserAC(data)) );
  
-   
+      navigation("/");  
     };
     return (
     <div className="container">
@@ -48,7 +42,7 @@ function FormReg() {
           <input id="password2" placeholder="повторите пароль" type="password" className="validate" />
           <button
             type="submit"
-            className="waves-effect waves-light btn-large brown lighten-2"
+            className="waves-effect waves-light btn-large indigo darken-4 lighten-2"
           >
             Зарегистрироваться<i className="material-icons left"></i>
           </button>

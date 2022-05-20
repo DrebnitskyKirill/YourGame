@@ -7,6 +7,7 @@ module.exports = {
         [
           {
             topic_id: 1,
+            zag: 'География',
             question: 'Что является столицей Австралии?',
             answer: 'Канберра',
             questionValue: 200,
@@ -47,6 +48,7 @@ module.exports = {
           },
           {
             topic_id: 2,
+            zag: 'Кино',
             question: 'Каким был первый полнометражный анимационный фильм?',
             answer: 'Белоснежка и семь гномов',
             questionValue: 200,
@@ -87,6 +89,7 @@ module.exports = {
           },
           {
             topic_id: 3,
+            zag: 'Выдры',
             question: 'Что является основным источником пищи выдры?',
             answer: 'Рыба',
             questionValue: 200,
@@ -127,6 +130,7 @@ module.exports = {
           },
           {
             topic_id: 4,
+            zag: 'Обществознание',
             question: 'На железных дорогах Японии эту работу выполняют «толкатели». Чем они занимаются?',
             answer: 'Запихивают людей в вагоны',
             questionValue: 200,

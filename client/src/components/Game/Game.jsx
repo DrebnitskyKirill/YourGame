@@ -26,10 +26,13 @@ import './Game.css'
 
 export default function Game({questions}) {
   const { rightQuestion } = useSelector((store) => store.findQuestion);
-  console.log(rightQuestion)
+  const {user}=useSelector(state=>state.user)
+  console.log(user)
+
   const [modalActive, setModalActive] = useState(false)  
   return (
     <div>
+    <div className='zag'>{questions.zag}</div>
       <button className='theme' onClick={()=> setModalActive(true)}>{questions.questionValue}</button>
       <Modal active={modalActive} setActive={()=>setModalActive(false)} questions={questions}></Modal>
     </div>

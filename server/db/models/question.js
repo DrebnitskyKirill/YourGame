@@ -22,6 +22,9 @@ module.exports = (sequelize, DataTypes) => {
         key: 'id',
       },
     },
+    zag: {
+      type: DataTypes.TEXT
+    },
     question: {
       allowNull: false,
       type: DataTypes.TEXT

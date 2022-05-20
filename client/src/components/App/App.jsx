@@ -27,6 +27,7 @@ function App() {
             <Route path="/registration" element={<FormReg />} />
             <Route path="/" element={<Questions />} />
             <Route path='/question/:id' element={<Modal />} />
+            <Route path='/logout' element={<Modal />} />
           </Routes>
         </BrowserRouter>
       </Provider>

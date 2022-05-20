@@ -38,7 +38,7 @@ function FormLogin() {
 
           <button
             type="submit"
-            className="waves-effect waves-light btn-large brown lighten-2"
+            className="waves-effect waves-light btn-large indigo darken-4 lighten-2"
           >
             Авторизоваться<i className="material-icons left"></i>
           </button>
