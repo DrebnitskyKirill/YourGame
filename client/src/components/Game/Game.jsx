@@ -10,22 +10,8 @@ export default function Game() {
         <button className='theme' >title</button>
         <button className='theme' >title</button>
         <button className='theme' >title</button>
-        <button className='theme' onClick={() => setModalActive(true)}>title</button>
-        <div className='first' onClick={() => setModalActive(true)}>title</div>
-        <button className='theme' onClick={() => setModalActive(true)}>title</button>
-        <button className='theme' onClick={() => setModalActive(true)}>title</button>
-        <button className='theme' onClick={() => setModalActive(true)}>title</button>
-        <button className='theme' onClick={() => setModalActive(true)}>title</button>
-        <div className='first' onClick={() => setModalActive(true)}>title</div>
-        <button className='theme' onClick={() => setModalActive(true)}>title</button>
-        <button className='theme' onClick={() => setModalActive(true)}>title</button>
-        <button className='theme' onClick={() => setModalActive(true)}>title</button>
-        <button className='theme' onClick={() => setModalActive(true)}>title</button>
-        <div className='first' onClick={() => setModalActive(true)}>title</div>
-        <button className='theme' onClick={() => setModalActive(true)}>title</button>
-        <button className='theme' onClick={() => setModalActive(true)}>title</button>
-        <button className='theme' onClick={() => setModalActive(true)}>title</button>
-        <button className='theme' onClick={() => setModalActive(true)}>title</button>
+        <button className='theme' onClick={() => setModalActive(!modalActive)}>title</button>
+      
       </div>
       <Modal active={modalActive} setActive={setModalActive}/>
     </div>
