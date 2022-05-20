@@ -21,7 +21,7 @@ function FormReg() {
       password2: e.target.password.value,
     };
 
-    fetch("http://localhost:3002/registration", {
+    fetch("http://localhost:4000/registration", {
       headers: { "content-type": "application/json" },
       method: "POST",
       body: JSON.stringify(data),
