@@ -1,7 +1,7 @@
 const cookiesCleaner = (req, res, next) => {
   if (req.cookies.sid && !req.session.user) {
     res.clearCookie('sid');
-    res.redirect('/');
+    //res.redirect('/');
   } else {
     next();
   }
@@ -9,7 +9,7 @@ const cookiesCleaner = (req, res, next) => {
 
 const sessionChecker = (req, res, next) => {
   if (req.session.user) {
-    res.redirect('/main');
+    //res.redirect('/main');
   } else {
     next();
   }

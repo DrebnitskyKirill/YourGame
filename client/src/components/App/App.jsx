@@ -10,8 +10,9 @@ import {
 import Nav from '../Nav/Nav';
 import { Provider } from 'react-redux'
 import {store} from '../../redux/store'
+import FormReg from "../FormReg/FormReg";
+import FormLogin from "../FormLogin/FormLogin";
 import Questions from '../Questions/Questions';
-// import PostParams from '../PostParams/PostParams';
 import Modal from '../Modal/Modal';
 
 function App() {
@@ -22,6 +23,8 @@ function App() {
         <BrowserRouter>
           <Nav />
           <Routes>
+            <Route path="/login" element={<FormLogin />} />
+            <Route path="/registration" element={<FormReg />} />
             <Route path="/" element={<Questions />} />
             <Route path='/question/:id' element={<Modal />} />
           </Routes>
