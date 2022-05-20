@@ -19,11 +19,14 @@
 //   );
 
 import React, { useState } from 'react'
+import { useSelector } from 'react-redux';
 import Modal from '../Modal/Modal'
 import './Game.css'
 // import { Link } from 'react-router-dom'
 
 export default function Game({questions}) {
+  const { rightQuestion } = useSelector((store) => store.findQuestion);
+  console.log(rightQuestion)
   const [modalActive, setModalActive] = useState(false)  
   return (
     <div>

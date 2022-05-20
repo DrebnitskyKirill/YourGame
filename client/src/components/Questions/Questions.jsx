@@ -6,7 +6,7 @@ import Game from "../Game/Game";
 export default function Questions() {
   const dispatch = useDispatch();
   const { questions } = useSelector((store) => store.questions);
-  console.log(questions);
+  const { rightQuestion } = useSelector((store) => store.findQuestion);
   useEffect(() => {
     fetch("http://localhost:4000/questions")
       .then((res) => res.json())
@@ -14,14 +14,17 @@ export default function Questions() {
   }, []);
 
   return (
+    <>
+    <div className="score">{rightQuestion[0]}</div>
     <div className="wrapper">
       <div className="board">
-          
+
           {questions.map((el) => (
             <Game key={el.id} questions={el} />
           ))}
         
       </div>
     </div>
+    </>
   );
 }
