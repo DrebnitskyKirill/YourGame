@@ -1,0 +1,25 @@
+
+.theme{
+  width: 200px;
+  height: 100px;
+  background:linear-gradient(to top left, rgb(0, 0, 0), blue);
+  color:yellow;
+  border: 1px solid yellow;
+  cursor: pointer;
+  outline: none;
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.theme:hover{
+  background: rgb(80, 196, 225);
+  transition: .3s all ease;
+}
+.zag{
+  display: flex;
+  justify-content: left;
+  position: absolute;
+  color:yellow;
+}
+
